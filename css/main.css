@@ -1,0 +1,299 @@
+body, 
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  color: #424242;
+  background-color: #b4b4b4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0; 
+}
+
+header,
+nav, 
+footer, 
+section, 
+article, 
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header -------------------------------------------*/
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  min-width: 320px;
+  min-height: 56px;  
+  transition: min-height 0.3s;
+  border-bottom: 3px solid #c70000;  
+  background-color: #fff;  
+}
+
+.header-inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;  
+}
+
+.header-logo {
+  height: 56px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin: 12px;
+  display: inline-block;
+}
+
+.header-text {
+  text-align: right;
+  width: 100%;
+  margin-right: 12px;
+  margin-top: 12px;
+  display: block;  
+}
+
+.header-title {
+  font-weight: 600;
+  font-size: 2em;
+  color: #000;
+}
+.header-subtitle {
+  font-weight: 400;
+  font-size: 1em;
+  color: #6a6a6a;  
+}
+
+/* Main ---------------------------------------------*/
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1e1e1e;
+}
+
+/* Hero ---------------------------------------------*/
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url(../img/havoline.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 550px;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  color: #fff;
+  text-align: center;  
+  padding: 0.3em;
+}
+
+.hero h2 {
+  font-size: 1.3em;
+  margin-block-start: 0.7em;
+}
+
+.hero p {
+  font-family: "Roboto";
+  font-size: 0.7em;
+  color: #c70000;
+  font-weight: 600;
+}
+
+.hero span {
+  color: #fff;
+}
+
+/* Work ---------------------------------------------*/
+.featured-works {
+  clear: both;
+  padding: 1em;
+}
+
+.works-title {
+  color: #979797;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-item {
+  min-width: 100%;
+  height: 180px;
+  margin: 10px;  
+  cursor: pointer;
+  position: relative;  
+  color: #979797;
+  transition: color ease-out 0.5s;
+  box-sizing: border-box;
+  border-left: 3px solid #000;  
+  border-right: 3px solid #000;
+  transition: border-color ease-out 0.5s, color ease-out 0.5s;
+}
+
+.portfolio-item:hover {
+  color: #fff; 
+  border-color: #c70000;  
+}
+
+.portfolio-thumbnail {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  transition: filter ease-out 0.5s;
+}
+
+.portfolio-thumbnail:hover {
+  filter: grayscale(0%);    
+}
+
+.portfolio-thumbnail-1 {
+  background-image:url(../img/milwaukee-blur.PNG);
+}
+
+.portfolio-thumbnail-2 {
+  background-image:url(../img/brembo-blur.png);
+}
+
+.portfolio-thumbnail-3 {
+  background-image:url(../img/oakley-blur.PNG);
+}
+
+.portfolio-thumbnail-4 {
+  background-image:url(../img/vodafone-blur.PNG);
+}
+
+.portfolio-text {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 100%;  
+  text-align: center;  
+  padding: 0em;  
+}
+
+.portfolio-text h3 {  
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+.portfolio-text p {
+  display: inline-block;
+}
+
+/* Footer -------------------------------------------*/
+.footer {
+  border-top: 3px solid #c70000;  
+  background-color: #fff;  
+  padding: 0em;
+  width: 100%;
+}
+
+.footer-inner {
+  width: 100%;  
+}
+
+.footer-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-facebook {
+  background-image:url(../img/icon-facebook.png);
+}
+
+.icon-facebook:hover {
+  background-image:url(../img/icon-facebook-hover.png);
+} 
+
+.icon-instagram {
+  background-image:url(../img/icon-instagram.png);
+}
+
+.icon-instagram:hover {
+  background-image:url(../img/icon-instagram-hover.png);
+} 
+
+.icon-youtube {
+  background-image:url(../img/icon-youtube.png);
+}
+
+.icon-youtube:hover {
+  background-image:url(../img/icon-youtube-hover.png);
+} 
+
+/* Media Queries -------------------------------------*/
+@media screen and (min-width: 500px) {
+  .header-logo {
+    height: 72px;
+  }
+
+  .header-title {
+    font-size: 2.5em;    
+  }
+
+  .header-subtitle {    
+    font-size: 1.3em;     
+  }
+
+  .hero h2 {
+    font-size: 1.9em;
+  }
+
+  .hero p {    
+    font-size: 1em;   
+  }
+
+  .portfolio-item {
+    min-width: 45%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .header-inner, .content, .footer-inner {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+} 
